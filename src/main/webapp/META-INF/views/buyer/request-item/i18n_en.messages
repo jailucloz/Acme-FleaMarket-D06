@@ -1,0 +1,17 @@
+
+buyer.request.list.label.ticker	= Ticker
+buyer.request.list.label.creationMoment = Creation moment
+
+
+buyer.request.form.label.ticker	= Ticker
+buyer.request.form.label.creationMoment = Creation moment
+buyer.request.form.label.quantity = Quantity
+buyer.request.form.label.descriptionText	= Description text
+buyer.request.form.label.notes	= Notes
+buyer.request.form.label.status = Status
+
+
+buyer.request.error.duplicatedTicker = Ticker must be unique
+
+buyer.request.form.button.return = Return
+buyer.request.form.buttom.create = Create

@@ -1,0 +1,21 @@
+
+supplier.request.list.label.ticker	= Ticker
+supplier.request.list.label.creationMoment = Creation moment
+supplier.request.list.label.item = Item name
+
+supplier.request.form.label.ticker	= Ticker
+supplier.request.form.label.creationMoment = Creation moment
+supplier.request.form.label.quantity = Quantity
+supplier.request.form.label.descriptionText	= Description text
+supplier.request.form.label.notes	= Notes
+supplier.request.form.label.item.ticker	= Item ticker
+supplier.request.form.label.item.title	= Item title
+supplier.request.form.label.rejectJustification = Reject justification
+
+
+supplier.request.form.button.return = Return
+supplier.request.form.button.accept = Accept
+supplier.request.form.button.reject = Reject
+
+supplier.request.error.justification = Rejected requests must have a mandatory justification
+supplier.request.list.label.new = New item

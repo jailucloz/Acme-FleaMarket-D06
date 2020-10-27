@@ -1,0 +1,8 @@
+authenticated.buyer.form.label.email	= Correo electrónico 
+authenticated.buyer.form.label.phoneNumber	= Número de teléfono
+authenticated.buyer.form.label.deliveryAddres	= Dirección de entrega
+authenticated.buyer.form.label.creditCard	= Tarjeta de crédito
+
+authenticated.buyer.form.button.return = Volver
+authenticated.buyer.form.button.create = Crear
+authenticated.buyer.form.button.update = Actualizar

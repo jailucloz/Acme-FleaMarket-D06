@@ -1,0 +1,10 @@
+
+
+authenticated.supplier.form.label.company	= Compañia
+authenticated.supplier.form.label.homePage	= Página de inicio
+authenticated.supplier.form.label.itemCategory	= Categoría del artículo
+authenticated.supplier.form.label.description	= Descripción
+
+authenticated.supplier.form.button.return = Volver
+authenticated.supplier.form.button.create = Crear
+authenticated.supplier.form.button.update = Actualizar

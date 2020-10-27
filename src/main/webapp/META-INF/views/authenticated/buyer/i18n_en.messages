@@ -1,0 +1,10 @@
+
+
+authenticated.buyer.form.label.email	= Email
+authenticated.buyer.form.label.phoneNumber	= Phone number
+authenticated.buyer.form.label.deliveryAddres	= Delivery address
+authenticated.buyer.form.label.creditCard	= Credit card
+
+authenticated.buyer.form.button.return = Return
+authenticated.buyer.form.button.create = Create
+authenticated.buyer.form.button.update = Update
