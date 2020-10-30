@@ -108,6 +108,11 @@
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update" />
 			
+			<acme:menu-suboption code="master.menu.user-account.become-supplier" action="/authenticated/supplier/create" access="!hasRole('Supplier')"/>
+			<acme:menu-suboption code="master.menu.user-account.supplier" action="/authenticated/supplier/update" access="hasRole('Supplier')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-buyer" action="/authenticated/buyer/create" access="!hasRole('Buyer')"/>
+			<acme:menu-suboption code="master.menu.user-account.buyer" action="/authenticated/buyer/update" access="hasRole('Buyer')"/>
+			
 	
 		</acme:menu-option>
 

@@ -11,21 +11,21 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
+    alter table `banner` 
+       drop 
+       foreign key `FKjoxwdnjr54soq3j89kt3fgrtj`;
+
     alter table `buyer` 
        drop 
        foreign key FK_630a954if6nal5afofvjy73ob;
 
-    alter table `consumer` 
+    alter table `credit_card` 
        drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
+       foreign key `FKa4pbn9v8sv66p46fsrke8ow89`;
 
     alter table `item` 
        drop 
        foreign key `FK7r7pmef5wvaepffbi0xfrso2c`;
-
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
     alter table `request_item` 
        drop 
@@ -43,6 +43,10 @@
        drop 
        foreign key `FKot1q9gh25o69kcn1fxi26xi2l`;
 
+    alter table `sponsor` 
+       drop 
+       foreign key FK_20xk0ev32hlg96kqynl6laie2;
+
     alter table `supplier` 
        drop 
        foreign key FK_1h83guf8tf3di74bk4uhuo1ia;
@@ -55,9 +59,11 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `banner`;
+
     drop table if exists `buyer`;
 
-    drop table if exists `consumer`;
+    drop table if exists `credit_card`;
 
     drop table if exists `customisation`;
 
@@ -71,11 +77,11 @@
 
     drop table if exists `news`;
 
-    drop table if exists `provider`;
-
     drop table if exists `request_item`;
 
     drop table if exists `sheet`;
+
+    drop table if exists `sponsor`;
 
     drop table if exists `suggestion`;
 

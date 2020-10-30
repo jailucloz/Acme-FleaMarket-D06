@@ -38,6 +38,17 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `final_mode` bit not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `target_url` varchar(255),
+        `sponsor_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `buyer` (
        `id` integer not null,
         `version` integer not null,
@@ -49,12 +60,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `consumer` (
+    create table `credit_card` (
        `id` integer not null,
         `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
+        `brand` varchar(255),
+        `cvv` integer,
+        `expiration_date` datetime(6),
+        `holder_name` varchar(255),
+        `number` varchar(255),
+        `banner_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -131,15 +145,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `request_item` (
        `id` integer not null,
         `version` integer not null,
@@ -163,6 +168,14 @@
         `photo` varchar(255),
         `title` varchar(255),
         `item_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `sponsor` (
+       `id` integer not null,
+        `version` integer not null,
+        `user_account_id` integer,
+        `organisation_name` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -243,25 +256,25 @@
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
+    alter table `banner` 
+       add constraint `FKjoxwdnjr54soq3j89kt3fgrtj` 
+       foreign key (`sponsor_id`) 
+       references `sponsor` (`id`);
+
     alter table `buyer` 
        add constraint FK_630a954if6nal5afofvjy73ob 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
+    alter table `credit_card` 
+       add constraint `FKa4pbn9v8sv66p46fsrke8ow89` 
+       foreign key (`banner_id`) 
+       references `banner` (`id`);
 
     alter table `item` 
        add constraint `FK7r7pmef5wvaepffbi0xfrso2c` 
        foreign key (`supplier_id`) 
        references `supplier` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
 
     alter table `request_item` 
        add constraint `FKl95xyup7566n80564w7082s` 
@@ -282,6 +295,11 @@
        add constraint `FKot1q9gh25o69kcn1fxi26xi2l` 
        foreign key (`item_id`) 
        references `item` (`id`);
+
+    alter table `sponsor` 
+       add constraint FK_20xk0ev32hlg96kqynl6laie2 
+       foreign key (`user_account_id`) 
+       references `user_account` (`id`);
 
     alter table `supplier` 
        add constraint FK_1h83guf8tf3di74bk4uhuo1ia 
