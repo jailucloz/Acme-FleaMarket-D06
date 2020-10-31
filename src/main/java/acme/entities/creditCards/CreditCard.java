@@ -5,6 +5,8 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -36,7 +38,7 @@ public class CreditCard extends DomainEntity {
 	private String				brand;
 
 	@NotNull
-	@Valid
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date				expirationDate;
 
 	@NotNull
