@@ -494,7 +494,7 @@
 	
 	<bean name="banner03" class="acme.entities.banners.Banner">
 		<property name="picture"
-			value="https://lh3.googleusercontent.com/proxy/Dgh75YmnyC46vuh4R81PlZ7u6SfaFOCoOeMe8msAZq1JIBer5gjEkbYEO4kNTHHAOWF4Ji5C8J8HthZzz0pzeq9jCS0" />
+			value="https://ii-broker.com/wp-content/uploads/2018/06/logo-ocaso.png" />
 		<property name="slogan" value="Ocaso Seguros" />
 		<property name="targetUrl" value="https://www.ocaso.es/es" />
 		<property name="finalMode" value="true" />
