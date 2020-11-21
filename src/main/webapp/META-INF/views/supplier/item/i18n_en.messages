@@ -21,5 +21,7 @@ supplier.item.form.button.delete = Delete
 supplier.item.form.button.update = Update
 supplier.item.form.button.create = Create
 
+supplier.item.form.label.sheet = Specification sheet list
+
 errors.item.finalMode = An item can be deleted as long as it is in draft mode
 errors.item.hasRequestItems = An item can be deleted if it is not involved in any requests

@@ -1,0 +1,9 @@
+supplier.sheet.form.label.indexer = Indexer
+supplier.sheet.form.label.title = Title
+supplier.sheet.form.label.description = Description
+supplier.sheet.form.label.photo = Photo
+
+supplier.sheet.list.label.title = Title
+supplier.sheet.list.label.indexer = Indexer
+
+supplier.sheet.form.button.return = Return

@@ -14,6 +14,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 import acme.entities.items.Item;
 import acme.entities.roles.Buyer;
@@ -43,8 +44,10 @@ public class RequestItem extends DomainEntity {
 	@Positive
 	private Integer				quantity;
 
+	@Size(min = 1, max = 256)
 	private String				notes;
 
+	@Size(min = 0, max = 256)
 	private String				rejectJustification;
 
 	@NotNull

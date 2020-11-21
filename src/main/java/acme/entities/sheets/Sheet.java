@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.URL;
 
@@ -32,7 +33,7 @@ public class Sheet extends DomainEntity {
 	 * section in its specification sheet.
 	 */
 
-	@NotBlank
+	@NotNull
 	@Positive
 	@Column(unique = true)
 	private Integer				indexer;
@@ -41,6 +42,7 @@ public class Sheet extends DomainEntity {
 	private String				title;
 
 	@NotBlank
+	@Size(min = 1, max = 256)
 	private String				description;
 
 	@URL

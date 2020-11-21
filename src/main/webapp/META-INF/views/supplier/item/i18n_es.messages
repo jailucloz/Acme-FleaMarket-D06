@@ -21,5 +21,7 @@ supplier.item.form.button.delete = Eliminar
 supplier.item.form.button.update = Actualizar
 supplier.item.form.button.create = Crear
 
+supplier.item.form.label.sheet = Lista de hojas de especificaciones
+
 errors.item.finalMode = Un artículo puede ser eliminado siempre y cuando esté en modo borrador
 errors.item.hasRequestItems = Un artículo puede ser eliminado siempre y cuando no esté envuelto en ninguna petición

@@ -79,6 +79,8 @@ master.menu.supplier.item.list-mine = List mine items
 master.menu.supplier.request.list-mine = List mine requests
 master.menu.supplier.request.list-order = Sorted list requests
 
+master.menu.supplier.item.create = Create item 
+
 # master.menu.buyer ##########################################################
 
 master.menu.buyer = Buyer

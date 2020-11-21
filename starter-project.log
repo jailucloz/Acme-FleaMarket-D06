@@ -627,3 +627,6 @@ An error occurred at line: [18] in the generated java file: [C:\Users\34608\AppD
 Only a type can be imported. acme.entities.roles.Provider resolves to a package
 An error occurred at line: [19] in the generated java file: [C:\Users\34608\AppData\Local\Temp\tomcat.7846003147213750589.8080\work\Tomcat\localhost\acme-fleamarket\org\apache\jsp\META_002dINF\views\framework\page_jsp.java]
 Only a type can be imported. acme.entities.roles.Consumer resolves to a package
+WARN [com.zaxxer.hikari.pool.HikariPool] {} - Thread starvation or clock leap detected (housekeeper delta={}).
+WARN [com.zaxxer.hikari.pool.HikariPool] {} - Thread starvation or clock leap detected (housekeeper delta={}).
+WARN [com.zaxxer.hikari.pool.HikariPool] {} - Thread starvation or clock leap detected (housekeeper delta={}).

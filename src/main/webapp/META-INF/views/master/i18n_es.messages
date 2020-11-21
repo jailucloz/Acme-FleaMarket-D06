@@ -77,6 +77,8 @@ master.menu.supplier.item.list-mine = Lista de mis artículos
 master.menu.supplier.request.list-mine = Lista de mis peticiones
 master.menu.supplier.request.list-order = Lista ordenada de peticiones
 
+master.menu.supplier.item.create = Crear artículo
+
 # master.menu.buyer ##########################################################
 
 master.menu.buyer = Comprador

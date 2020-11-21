@@ -42,6 +42,7 @@
 	</jstl:if>
 	
 
+		<acme:form-submit test="${command != 'create'}" code="supplier.item.form.label.sheet" action="/supplier/sheet/list?id=${id}" method="get"/>
 	
 	
 	<acme:form-submit test="${command == 'show' && finalMode == false}" code="supplier.item.form.button.update" action="/supplier/item/update"/>

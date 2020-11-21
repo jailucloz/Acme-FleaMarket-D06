@@ -225,6 +225,34 @@
 		<property name="newsCategories" value="Breaking news, Important news, Warning, Information" />
 
 	</bean>
+	
+	
+	<!-- Sheet  -->
+	
+	<bean id="sheet01" class="acme.entities.sheets.Sheet">
+		<property name="indexer" value="1111" />
+		<property name="title" value="Sample sheet 01" />
+		<property name="description" value="This is the first description" />
+		<property name="photo" value="https://www.photo01.com" />
+		<property name="item" ref="item01" />
+		</bean>
+		
+	<bean id="sheet02" class="acme.entities.sheets.Sheet">
+		<property name="indexer" value="118" />
+		<property name="title" value="Sample sheet 02" />
+		<property name="description" value="This is the second description" />
+		<property name="photo" value="https://www.photo02.com" />
+		<property name="item" ref="item01" />
+		</bean>
+		
+	<bean id="sheet03" class="acme.entities.sheets.Sheet">
+		<property name="indexer" value="11122" />
+		<property name="title" value="Sample sheet 03" />
+		<property name="description" value="This is a description" />
+		<property name="photo" value="https://www.photo04.com" />
+		<property name="item" ref="item02" />
+		</bean>
+	
 
 	<!-- Items -->
 
